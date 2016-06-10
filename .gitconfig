@@ -1,0 +1,37 @@
+[alias]
+    br = branch
+    co = checkout
+    cob = checkout -b
+    cm = commit
+    dl = !git ll -1
+    dlc = diff --cached HEAD^
+    dr = "!f() { git diff "$1"^.."$1"; }; f"
+    ec = config --global -e
+    fl = log -u
+    lc = "!f() { git ll "$1"^.."$1"; }; f"
+    ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    ll = git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    st = status --column=
+    up = !git pull --rebase --prune && git submodule update --init --recursive --remote
+
+[color]
+    ui = true
+
+[core]
+    editor = vim
+    pager = 
+
+[diff]
+    tool = vimdiff
+
+[merge]
+    tool = mvimdiff
+    conflictstyle = diff3
+
+[mergetool "mvimdiff"]
+    cmd = mvimdiff -f "$LOCAL" "$MERGED" "$REMOTE"
+
+[push]
+    default = simple
