@@ -84,4 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='ls -la --color'
 alias standup='git standup -o /cygdrive/c/Users/nbenjamin/Dropbox/standup.txt'
-alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
