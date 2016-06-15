@@ -33,7 +33,7 @@
 	url = https://github.com/tomtom/tlib_vim
 [submodule ".vim/bundle/vim-addon-mw-utils"]
 	path = .vim/bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mv-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
