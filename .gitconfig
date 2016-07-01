@@ -1,6 +1,6 @@
 [alias]
     br = branch
-    co = checkout
+    co = "!f() { git checkout $1 && git up; }; f"
     cob = checkout -b
     cm = commit
     dl = !git ll -1
