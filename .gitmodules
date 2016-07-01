@@ -58,3 +58,9 @@
 [submodule ".vim/bundle/vim-plugin-minibufexpl"]
 	path = .vim/bundle/vim-plugin-minibufexpl
 	url = https://github.com/weynhamz/vim-plugin-minibufexpl
+[submodule "tmux-plugins/tmux-resurrect"]
+	path = tmux-plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+[submodule "tmux-plugins/tmux-continuum"]
+	path = tmux-plugins/tmux-continuum
+	url = https://github.com/tmux-plugins/tmux-continuum
