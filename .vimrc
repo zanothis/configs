@@ -26,6 +26,7 @@
     set shiftwidth=4
     set expandtab
     set smarttab
+    au FileType gitcommit setlocal textwidth=72
 " }}}
 
 " UI Layout {{{

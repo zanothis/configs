@@ -58,6 +58,8 @@ plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
+export SHELL=/usr/bin/zsh
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -87,3 +89,4 @@ alias standup='git standup -o /cygdrive/c/Users/nbenjamin/Dropbox/standup.txt'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias slayout='layout=$(tmux display-message -p "#{window_layout}")'
 alias rlayout='tmux select-layout "$layout"'
+alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) /cygdrive/c/Python34/Scripts/thefuck.exe $(fc -ln -1)) && eval $TF_CMD && history -s $TF_CMD'
